@@ -37,10 +37,6 @@
         </div>
     </div>
 
-    <div class="video-section">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hnACyCBm8aY?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-
     <div class="lower-section">
         <div class="lowerquote">
             This is some inspiring quote, or a testimonial from a customer. Maybe it's just filling 
@@ -59,5 +55,30 @@
             <button>Sign up</button>
         </div>
     </div>
+
+    <button id="playButton">Play Video</button>
+
+    <div class="video-section" id="videoSection" style="display: none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hnACyCBm8aY?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="youtubeVideo"></iframe>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtubeVideo', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+        function onPlayerReady(event) {
+            document.getElementById('playButton').addEventListener('click', function() {
+                document.getElementById('videoSection').style.display = 'block';
+                player.unMute();
+                player.playVideo();
+            });
+        }
+    </script>
 </body>
 </html>
