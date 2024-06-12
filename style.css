@@ -80,9 +80,7 @@ a {
 }
 
 .video-section {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+    display: none;
 }
 
 .lower-section {
