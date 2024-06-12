@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1F2937;
+    color: #F9FAF8;
+    padding: 10px 20px;
+}
+
+.headerlinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+.lower-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #1F2937;
+    padding: 40px;
+}
+
+.lowerlist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lowerbold {
+    font-weight: bold;
+    font-size: 30px;
+    width: 400px;
+    color: #F9FAF8;
+}
+
+.lowerdescription {
+    width: 400px;
+    color: #F9FAF8;
+}
+
+.lowercard {
+    border: 1px solid gray;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    padding: 80px;
+    width: 250px;
+    background: gray;
+    margin-top: 20px;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.allcards {
+    display: flex;
+    gap: 90px;
+}
+
+.cards {
+    border: 1px solid gray;
+    padding: 20px;
+    background: #F9FAF8;
+    border-radius: 4px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.lower-section {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+.lowerquote {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 600px;
+    justify-content: center;
+    font-size: 25px;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.quote-source {
+    font-size: 18px;
+    font-weight: bold;  
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #1F2937;
+}
+
+.bottom-center-card {
+    background: #F9FAF8;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+.bottomlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #1F2937;
+    color: #F9FAF8;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #111827;
+}
